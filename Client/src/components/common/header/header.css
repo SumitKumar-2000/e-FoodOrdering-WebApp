@@ -1,0 +1,91 @@
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header-Logo{
+    background-color: black;
+    text-decoration-line: none;
+    color: white;
+    border-radius: 50%;
+    padding: 7px 7px;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+
+.header-Logo:hover{
+    color: white;
+}
+
+.header-right{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.header-location-search-container{
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: var(--primary-box-shadow);
+    border: var(--white-border);
+    width: 70%;
+    background-color: var(--primary-bg);    
+ }
+
+.location-icon-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    border-right: 1px solid var(--zomato-gray);
+}
+
+.location-select{
+    color: var(--zomato-gray);
+    margin: 0px 1rem 0px 0.5rem;
+    border: none;
+    outline: none;
+    height: 2rem;
+    width: 12rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.location-icon{
+    color: var(--zomato-red);
+    font-size: 1.1rem;
+}
+
+.search-input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.location-input{
+    color: var(--zomato-gray);
+    margin: 0px 1rem 0px 0.5rem;
+    border: none;
+    outline: none;
+    height: 2rem;
+    width: 24rem;
+    font-size: 1rem;
+}
+
+.register{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--zomato-gray);
+    font-size: 1.1rem;
+    cursor: pointer;
+}

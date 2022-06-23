@@ -1,0 +1,31 @@
+.collection-item{
+    width: 11.5rem;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.collection-item-cover{
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--primary-bg);
+    box-shadow: var(--collection-shadow);
+    border-radius: 50%;
+}
+
+.collection-item-img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.collection-item-title{
+    font-size: 1.2rem;
+    color: #333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

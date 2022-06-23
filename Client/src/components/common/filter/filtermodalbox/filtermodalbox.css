@@ -1,0 +1,23 @@
+.filter-sortby{
+    margin-bottom: 1rem;
+}
+
+.radio-box{
+    margin-left: 0.5rem;
+}
+
+.radio-label{
+    color: rgb(28, 28, 28);
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.filter-cuisine{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.check-box{
+    margin-left: 0.5rem;
+    width: 48%;
+}

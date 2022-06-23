@@ -1,0 +1,14 @@
+#root{
+    --primary-box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+    --white-border: 1px solid rgb(232, 232, 232);
+    --primary-bg: rgb(255, 255, 255);
+    --zomato-gray: #828282;
+    --zomato-red: #ff7e8b;
+    --inactive-text: #696969;
+    --filter-text: #9c9c9c;
+    --collection-shadow: rgb( 0 0 0 / 8%) 0px 3px 12px;
+    --collection-background: rgb(248, 248, 248);
+    --tag-green: #267e3e; 
+    --bg-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%);
+    --user-authgray: #5C6B7A;
+}

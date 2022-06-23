@@ -1,0 +1,12 @@
+.filter-item{
+    padding: 0.5rem;
+    background-color: var(--primary-bg);
+    color: var(--filter-text);    
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 8px;
+    margin: 10px 10px 10px 0px;
+    font-size: 14px;
+ }
+ .filter-item:hover{
+     background-color: var(--collection-background);
+ }
