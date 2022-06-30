@@ -27,10 +27,6 @@ const UserPreview = () => {
   const userInfo = localStorage.getItem('userInfo')
   // const [progress,setProgress] = useState(0);
 
-  const handleLogout = async () =>{
-    await localStorage.removeItem('userInfo')
-  }
-
   return (
     <>
       {/* <LoadingBar
@@ -41,20 +37,25 @@ const UserPreview = () => {
       <div className="user-preview">
         <div className="user-auth ">
           <div className="auth-box">
-            {!userInfo ? <div className="auth-text cur-pointer">
+            {!userInfo ? (
+              <div className="auth-text cur-pointer">
                 <Link
                   to="/login"
                   style={{ textDecoration: "none", color: "#fff" }}
                 >
                   Login
                 </Link>
-            </div> :
-            <div style={{fontSize: "1.2rem", fontWeight: "300", paddingBottom: "0.25rem"}}>
-                <div style={{display:"flex", width:"124px", justifyContent:"space-between"}}>
-                  <div className='cur-pointer auth-text'>{JSON.parse(userInfo).name}</div>
-                  <div className='cur-pointer auth-text' onClick={handleLogout}>Logout</div>
-                </div>
-            </div>}
+              </div>
+            ) : (
+              <div className='auth-text cur-pointer'>
+                <Link
+                  to="/home"
+                  style={{ textDecoration: "none", color: "#fff" }}
+                >
+                  Home
+                </Link>
+              </div>
+            )}
           </div>
         </div>
 

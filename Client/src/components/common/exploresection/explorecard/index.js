@@ -1,4 +1,7 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { actionRestaurant } from '../../../../redux/actions/restaurant';
 import '../explorecard/explorecard.css'
 
 const ExploreCard = ({restaurant}) => {
@@ -10,8 +13,11 @@ const ExploreCard = ({restaurant}) => {
     // const dineoutPrice = restaurant?.infor?.cft?.text;
     const cuisines = restaurant?.info?.cuisine?.map(item => item.name).slice(0,2);
 
+    const dispatch = useDispatch()
+    dispatch(actionRestaurant(restaurant));
+
     return (  
-        <div className='explore-card cur-pointer'>
+        <Link className='explore-card cur-pointer' to='/book' >
             <div className='explore-card-cover'>
                 <img src={coverImg} alt={name} className='explore-card-img' />
             </div>
@@ -37,7 +43,7 @@ const ExploreCard = ({restaurant}) => {
                     <div className='res-locality'>
                         {locality}
                     </div>
-        </div>
+        </Link>
     )
 }
 

@@ -1,0 +1,55 @@
+.cart-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foodContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navleft{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 7rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navitem1{
+    text-decoration: none;
+    color: black;
+}
+
+.navitem1:hover{
+    color: var(--zomato-red);
+}

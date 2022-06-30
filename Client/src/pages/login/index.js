@@ -10,6 +10,7 @@ const LoginScreen = () => {
   const navigate = useNavigate(); 
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
+  const [error,setError] = useState("")
 
   const handleSubmit = async (e) =>{
     e.preventDefault()
@@ -20,10 +21,13 @@ const LoginScreen = () => {
           res => {
             console.log(res.data)
             localStorage.setItem("userInfo",JSON.stringify(res.data))
+            navigate('/home')
           },
-          navigate('/home')
     )
-      .catch(err=>console.log(err.response.data))
+      .catch(err=>{
+        console.log(err.response.data)
+        setError(err.response.data)
+      })
   }
 
   return (
@@ -77,7 +81,9 @@ const LoginScreen = () => {
             Register
           </Link>
         </Col>
+
       </Row>
+      <Row className='' style={{color: "red"}}>{error}</Row>
 
     </HeadScreen>
   );

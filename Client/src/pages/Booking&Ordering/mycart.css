@@ -1,0 +1,48 @@
+.selectedFoodContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgb(226, 221, 221);
+    border-right: 6px solid var(--zomato-red);
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.foodImg{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    width: 80px;
+    height: 80px;
+}
+
+.foodName{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.priceTag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12rem;
+}
+
+.butButton{
+    width: 10rem;
+}
+
+.deleteIcon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.buy-bin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 4rem;
+}

@@ -11,6 +11,7 @@ const RegisterScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("")
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -21,7 +22,10 @@ const RegisterScreen = () => {
           res => console.log("response :",res.data),
           navigate('/login')
     )
-      .catch(err=>console.log(err.response.data))
+      .catch(err=>{
+        console.log(err.response.data)
+        setError(err.response.data)
+      })
   };
 
   return (
@@ -94,6 +98,9 @@ const RegisterScreen = () => {
             Login
           </Link>
         </Col>
+
+        {error && <Col>{error}</Col>}
+
       </Row>
     </HeadScreen>
   );

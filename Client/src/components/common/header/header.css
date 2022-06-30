@@ -80,12 +80,30 @@
     font-size: 1rem;
 }
 
-.register{
-    width: 10%;
+.cart{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--zomato-gray);
     font-size: 1.1rem;
     cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.cart :hover{
+    color: var(--zomato-red);
+}
+
+#navbarScrollingDropdown{
+    color: var(--zomato-gray);
+}
+
+#navbarScrollingDropdown:hover{
+    color: var(--zomato-red);
+}
+
+
+.dropdown-item:active{
+    color: var(--zomato-red);
+    background-color: rgb(218, 214, 214);
 }
