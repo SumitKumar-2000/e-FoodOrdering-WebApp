@@ -43,7 +43,7 @@ const Meal = ({food}) => {
       </div>
       <div className="quantity-container mt-3 md-1">
         <div className="w-100 m-1">
-          <p style={{ marginBottom: "1rem", textAlign: "center"}}>Varient</p>
+          <p style={{ marginBottom: "1rem", textAlign: "center" }}>Varient</p>
           <select
             className="w-100"
             value={varient}
@@ -55,7 +55,7 @@ const Meal = ({food}) => {
           </select>
         </div>
         <div className="w-100 m-1">
-          <p style={{ marginBottom: "1rem", textAlign:"center" }}>Quantity</p>
+          <p style={{ marginBottom: "1rem", textAlign: "center" }}>Quantity</p>
           <select
             className="w-100"
             value={quantity}
@@ -76,8 +76,12 @@ const Meal = ({food}) => {
           </p>
         </div>
         <div className="m-1">
-          <button className="btn btn-danger" style={{ fontSize: "0.8rem" }} onClick={()=>handleCart()}>
-            ADD To Cart
+          <button
+            className="btn btn-danger"
+            style={{ fontSize: "0.8rem" }}
+            onClick={() => handleCart()}
+          >
+            ADD TO CART
           </button>
         </div>
       </div>

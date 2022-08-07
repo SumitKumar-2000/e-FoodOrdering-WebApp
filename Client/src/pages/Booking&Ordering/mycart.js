@@ -1,13 +1,27 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import HeadScreen from '../../components/headScreen'
+import { deletefromcart } from '../../redux/actions/foodcart'
 import './mycart.css'
 
 const MyCart = () => {
 
+  const dispatch = useDispatch()
   const {cart} = useSelector(state => state.myCart)   
-  
+  console.log(cart);
+
+  // when cart item is deleted
+  const handleDelete = (food) => {
+    dispatch(deletefromcart(food))
+  }
+
+  // when cart is empty
+  const handleEmptyCart = () =>{
+    localStorage.removeItem("cartItem");
+  }
+
+  // if food item is allowed to buy
   const handleBuy = (foodPrice,e) =>{
 
     e.preventDefault()
@@ -60,6 +74,7 @@ const MyCart = () => {
                       src={require("./bin.png")}
                       alt="deleteIcon"
                       className="deleteIcon"
+                      onClick={()=>handleDelete(food)}
                     />
                   </div>
                 </div>
@@ -67,6 +82,7 @@ const MyCart = () => {
             );
           })
         ) : (
+          {handleEmptyCart},
           <h3 style={{ color: "#696969" }}>Your Cart is Empty...</h3>
         )}
       </div>
