@@ -16,8 +16,8 @@ const RegisterScreen = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    await axios.post('http://localhost:8080/api/user/register/',{
-      name,email,password, confirmPassword
+    await axios.post('https://e-food-api.herokuapp.com/api/user/register/',{
+      name,email,password,confirmPassword
     }).then(
           res => console.log("response :",res.data),
           navigate('/login')

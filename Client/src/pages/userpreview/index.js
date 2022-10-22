@@ -29,11 +29,6 @@ const UserPreview = () => {
 
   return (
     <>
-      {/* <LoadingBar
-      style={{height:'2px'}}
-      color='#f11946'
-      progress={progress}
-    /> */}
       <div className="user-preview">
         <div className="user-auth ">
           <div className="auth-box">

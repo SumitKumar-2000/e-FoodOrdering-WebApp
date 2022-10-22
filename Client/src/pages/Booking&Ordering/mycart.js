@@ -45,7 +45,7 @@ const MyCart = () => {
         address: "razorpay corporate office",
       },
       theme: {
-        color: "#3399cc",
+        color: "#DC3545",
       },
     };
     var pay = new window.Razorpay(options)

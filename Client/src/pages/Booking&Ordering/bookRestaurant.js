@@ -10,7 +10,7 @@ const BookRestaurant = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg shadow p-3 mb-5 bg-body rounded">
+      <nav className="navbar navbar-expand-lg shadow-sm sticky-top p-3 mb-5 bg-body rounded">
         <div className="navleft">e!</div>
         <div className="navright">
           <Link className="navitem1" to="/home" >Home</Link>

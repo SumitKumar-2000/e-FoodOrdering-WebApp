@@ -15,7 +15,7 @@ const LoginScreen = () => {
   const handleSubmit = async (e) =>{
     e.preventDefault()
 
-    await axios.post("http://localhost:8080/api/user/login",{
+    await axios.post("https://e-food-api.herokuapp.com/api/user/login",{
       email,password
     }).then(
           res => {
